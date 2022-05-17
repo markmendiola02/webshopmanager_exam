@@ -1,0 +1,11 @@
+INSTALLATION INSTRUCTIONS:
+
+1. Manually create a database.
+2. Modify app/config/config-database.php to set database name, username, password, and host.
+3. Load the website on the browser to automatically create tables and table data.
+4. Go to app/routes/api.php to set the seeder that will run using the /api/books/update endpoint. It is set to 'books%20-%20Sheet1.csv' by default, but you can change it by changing the file name inside the get() method and uploading the csv file in app/database/seeders.
+
+AVAILABLE ENDPOINTS:
+/api/books/update  : Adds or update database entries from seeders
+/api/books/list    : Retrieves the list of books
+/api/book/get/{id} : Retrieves a book by ID
